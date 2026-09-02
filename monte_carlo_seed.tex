@@ -1,0 +1,48 @@
+Monte Carlo Residual Seed Propagation Table  
+Orders 6 • 12 • 10 • 15 • 30
+
+Seed
+| Quantity | Value |
+|----------|-------|
+| Residual seed \(\delta\) | \(0.005167614403\) rad |
+| Practical step \(7\psi\) | \(1.052365165600\) rad |
+| \(7\psi / 2\pi\) (fractional) | \(0.167489118043\) |
+
+Primary Propagation Table
+
+| Order | Mean residual | Std residual | Max residual | Min residual | Closure error |
+|-------|---------------|--------------|--------------|--------------|---------------|
+| 6 | \(0.01291904\) | \(0.00882538\) | \(0.02583807\) | \(0.00000000\) | \(0.03100569\) |
+| 12 | \(0.02842188\) | \(0.01783888\) | \(0.05684376\) | \(0.00000000\) | \(0.06201137\) |
+| 10 | \(0.02325426\) | \(0.01484284\) | \(0.04650853\) | \(0.00000000\) | \(2.04271896\) |
+| 15 | \(0.03617330\) | \(0.02232665\) | \(0.07234660\) | \(0.00000000\) | \(3.06407844\) |
+| 30 | \(0.07493041\) | \(0.04472798\) | \(0.14986082\) | \(0.00000000\) | \(0.15502843\) |
+
+Monte Carlo Bootstrap (200 resamples)
+
+| Order | MC mean of means | MC std of means |
+|-------|------------------|-----------------|
+| 6 | \(0.01315158\) | \(0.00333869\) |
+| 12 | \(0.02830561\) | \(0.00471357\) |
+| 10 | \(0.02344547\) | \(0.00430568\) |
+| 15 | \(0.03593387\) | \(0.00560057\) |
+| 30 | \(0.07447910\) | \(0.00832242\) |
+
+Reference: Multiples of \(\delta\)
+
+| \(k\) | \(k\cdot\delta \bmod 2\pi\) |
+|-------|----------------------------|
+| 0 | \(0.0000000000\) |
+| 1 | \(0.0051676144\) |
+| 2 | \(0.0103352288\) |
+| 3 | \(0.0155028432\) |
+| 4 | \(0.0206704576\) |
+| 5 | \(0.0258380720\) |
+| 6 | \(0.0310056864\) |
+| 12 | \(0.0620113728\) |
+
+Propagation Notes
+\(\delta\) propagates as the base angular defect.
+Order-6** organises the defect into the residual hexagon (lowest closure error among primary folds).
+Orders 10, 12, 15, 30 densify the same residual orbit; mean residual to the ideal 6-fold lattice remains controlled by \(\delta\).
+The hierarchy is pure densification of one residual seed.
